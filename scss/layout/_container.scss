@@ -1,0 +1,8 @@
+@use "../foundation" as *;
+
+.l-container {
+  max-width: $width-base;
+  width: 100%;
+  padding-inline: 16px;
+  margin-inline: auto;
+}
