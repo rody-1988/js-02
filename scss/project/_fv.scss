@@ -1,3 +1,6 @@
 @use "../foundation" as *;
 
-
+.p-fv__content-text {
+  font-family: $font-base;
+  font-size: 330px;
+}

@@ -46,14 +46,10 @@ scss/
 ├── project/
 │   ├── _fv.scss
 │   ├── _launch.scss
-│   ├── _pizza.scss
-│   ├── _salad.scss
 │   ├── _alacarte.scss
 │   ├── _kids.scss
-│   ├── _dessert.scss
+│   ├── _cake.scss
 │   ├── _drink.scss
-│   ├── _coffee.scss
-│   ├── _piano.scss
 │   ├── _access.scss
 │   └── _index.scss
 │
@@ -328,7 +324,7 @@ c-button c-card c-title
 ## project
 
 ```html
-p-fv p-
+p-fv p-comcept
 ```
 
 ページ固有のスタイル用。
