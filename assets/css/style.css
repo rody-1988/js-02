@@ -34,7 +34,7 @@ body {
 img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  display: block;
 }
 
 .l-header {
@@ -52,6 +52,4 @@ img {
   width: 100%;
   padding-inline: 16px;
   margin-inline: auto;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

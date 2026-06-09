@@ -2,19 +2,20 @@
 
 個人制作・模写コーディングです。
 [goo-note](https://goo-note.info/)
+レストラン・カフェのお店
 
 ---
 
 ## 使用技術
 
-* HTML
-* Sass（SCSS）
-* JavaScript
-* Node.js
-* npm
-* Git
-* GitHub
-* CSS設計（FLOCSS + BEM風）
+- HTML
+- Sass（SCSS）
+- JavaScript
+- Node.js
+- npm
+- Git
+- GitHub
+- CSS設計（FLOCSS + BEM風）
 
 ---
 
@@ -44,7 +45,16 @@ scss/
 │
 ├── project/
 │   ├── _fv.scss
-│   ├── _about.scss
+│   ├── _launch.scss
+│   ├── _pizza.scss
+│   ├── _salad.scss
+│   ├── _alacarte.scss
+│   ├── _kids.scss
+│   ├── _dessert.scss
+│   ├── _drink.scss
+│   ├── _coffee.scss
+│   ├── _piano.scss
+│   ├── _access.scss
 │   └── _index.scss
 │
 ├── utility/
@@ -60,10 +70,10 @@ scss/
 
 ## 必要環境
 
-* Node.js（LTS版推奨）
-* npm
-* Git
-* VS Code
+- Node.js（LTS版推奨）
+- npm
+- Git
+- VS Code
 
 ---
 
@@ -78,8 +88,8 @@ cd project-name
 
 ### メモ
 
-* mkdir → フォルダ作成
-* cd → フォルダ移動
+- mkdir → フォルダ作成
+- cd → フォルダ移動
 
 ---
 
@@ -273,19 +283,18 @@ git commit -m "contact作成"
 ## layout
 
 ```html
-l-header
-l-container
+l-header l-container
 ```
 
 サイト全体のレイアウト管理用。
 
 ### メモ
 
-* 横幅
-* header
-* footer
-* grid
-* flex
+- 横幅
+- header
+- footer
+- grid
+- flex
 
 など配置を担当する。
 
@@ -296,9 +305,7 @@ l-container
 ## component
 
 ```html
-c-button
-c-card
-c-title
+c-button c-card c-title
 ```
 
 再利用するパーツ用。
@@ -309,20 +316,19 @@ c-title
 
 例
 
-* ボタン
-* カード
-* タイトル
-* ナビ
-* ハンバーガーボタン
-* フェードインアニメーション
+- ボタン
+- カード
+- タイトル
+- ナビ
+- ハンバーガーボタン
+- フェードインアニメーション
 
 ---
 
 ## project
 
 ```html
-p-about
-p-service
+p-fv p-
 ```
 
 ページ固有のスタイル用。
@@ -338,8 +344,7 @@ p-service
 ## utility
 
 ```html
-u-center
-u-hidden
+u-center u-hidden
 ```
 
 微調整用。
@@ -354,7 +359,7 @@ utilityを増やしすぎない。
 
 # Sassの管理
 
-## foundation/_index.scss
+## foundation/\_index.scss
 
 ```scss
 @forward "variables";
@@ -435,15 +440,15 @@ u- → utility
 
 # コーディングルール
 
-* component化を意識する
-* 再利用できるclass名をつける
-* class名は見た目ではなく役割でつける
-* style.scssには直接CSSを書かない
-* Sassを分割して管理する
-* layoutに余白を書きすぎない
-* section余白はproject側で管理する
-* 共通化できるものはcomponent化する
-* HTMLを先に組み、その後Sassを書く
+- component化を意識する
+- 再利用できるclass名をつける
+- class名は見た目ではなく役割でつける
+- style.scssには直接CSSを書かない
+- Sassを分割して管理する
+- layoutに余白を書きすぎない
+- section余白はproject側で管理する
+- 共通化できるものはcomponent化する
+- HTMLを先に組み、その後Sassを書く
 
 ---
 
@@ -481,11 +486,11 @@ NO → project
 
 # 今後追加予定
 
-* ハンバーガーメニュー
-* utility拡張
-* animation
-* componentライブラリ化
-* Swiperテンプレート化
-* npmライブラリ管理
-* Vite導入
-* React学習
+- ハンバーガーメニュー
+- utility拡張
+- animation
+- componentライブラリ化
+- Swiperテンプレート化
+- npmライブラリ管理
+- Vite導入
+- React学習
