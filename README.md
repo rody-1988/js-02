@@ -45,7 +45,8 @@ scss/
 │
 ├── project/
 │   ├── _fv.scss
-│   ├── _launch.scss
+│   ├── _news.scss
+│   ├── _lunch.scss
 │   ├── _alacarte.scss
 │   ├── _kids.scss
 │   ├── _cake.scss
