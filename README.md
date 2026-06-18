@@ -39,7 +39,7 @@ scss/
 ├── component/
 │   ├── _button.scss
 │   ├── _card.scss
-│   ├── _title.scss
+│   ├── _title.scss0
 │   ├── _animation.scss
 │   └── _index.scss
 │
