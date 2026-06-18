@@ -325,7 +325,7 @@ c-button c-card c-title
 ## project
 
 ```html
-p-fv p-comcept
+p-fv p-concept
 ```
 
 ページ固有のスタイル用。
