@@ -9,8 +9,13 @@ $color-header: #264062;
 // ======================================
 // Font
 // ======================================
-$font-base: system-ui, -apple-system,  "Segoe UI ", Roboto, sans-serif;
-$font-kokoro: "Kokoro";
+$font-base:
+  system-ui,
+  -apple-system,
+  "Segoe UI ",
+  Roboto,
+  sans-serif;
+$font-kokoro: "こころ明朝", "Kokoro", serif;
 // ======================================
 // Width
 // ======================================

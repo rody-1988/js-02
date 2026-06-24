@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -44,7 +45,6 @@ img {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;
 }
 .l-header__wrapper {
   display: flex;
@@ -136,9 +136,14 @@ img {
   display: block;
 }
 
+.p-fv {
+  margin-top: 100px;
+}
+
 .p-fv__content-text {
-  font-family: system-ui, -apple-system, "Segoe UI ", Roboto, sans-serif;
-  font-size: 16px;
+  font-family: "こころ明朝", "Kokoro", serif;
+  font-size: 32px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
