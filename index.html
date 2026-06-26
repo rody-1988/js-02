@@ -73,10 +73,43 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="assets/image/" alt=""></div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            ...
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(max-width: 800px)"
+                  srcset="assets/image/top_02_sp.jpg"
+                />
+                <img src="assets/image/top_02.jpg" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(max-width: 800px)"
+                  srcset="assets/image/top_03_sp.jpg"
+                />
+                <img src="assets/image/top_03.jpg" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(max-width: 800px)"
+                  srcset="assets/image/top_01_sp.jpg"
+                />
+                <img src="assets/image/top_01.jpg" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(max-width: 800px)"
+                  srcset="assets/image/top_04_sp.jpg"
+                />
+                <img src="assets/image/top_04.jpg" alt="" />
+              </picture>
+            </div>
+            ....
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
