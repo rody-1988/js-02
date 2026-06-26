@@ -9,8 +9,15 @@
     <link rel="icon" href="assets/image/icon-32x32.png" />
 
     <!-- font -->
-<link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/earlyaccess/kokoro.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -62,8 +69,27 @@
     <main>
       <!-- fv -->
       <section class="p-fv">
-        <div class="l-container p-fv">
-          <div class="p-fv__content"></div>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="assets/image/" alt=""></div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+        <div class="p-fv__content">
           <p class="p-fv__content-text">海を見ながらカフェランチ。</p>
           <p class="p-fv__content-text">空を見上げてカフェランチ。</p>
           <p class="p-fv__content-text">アフターワークは星月夜とともに</p>
@@ -72,7 +98,7 @@
       </section>
 
       <!-- お知らせ -->
-      <section class="p-news">
+      <section class="p-news l-container">
         <h2 class="p-news__title">重要なお知らせ</h2>
         <p class="p-news__text">
           いつも当店をご利用いただき、ありがとうございます。
@@ -338,7 +364,7 @@
       <div class="c-sec_header">
         <img src="assets/image/parallax-02_pc.JPG" alt="" />
       </div>
-      <section id="kids" class="p-kids">
+      <section id="kids" class="p-kids l-container">
         <h2 class="c-section__title">Kids Menu</h2>
         <div class="p-kids__wrapper">
           <article class="p-kids__menu">
@@ -423,7 +449,7 @@
       <div class="c-sec_header">
         <img src="assets/image/parallax-02_pc.JPG" alt="" />
       </div>
-      <section id="drink" class="p-drink">
+      <section id="drink" class="p-drink l-container">
         <h2 class="c-section__title">drink</h2>
         <div class="p-drink__wrapper">
           <article class="p-drink__menu">
@@ -571,7 +597,7 @@
       </div>
 
       <!-- Coffee -->
-      <section class="p-coffee">
+      <section class="p-coffee l-container">
         <div class="p-coffee__wrapper">
           <h2 class="p-coffee__title">
             <img src="assets/image/" alt="" />
@@ -697,6 +723,9 @@
         <p class="l-footer__copy">© guu-note</p>
       </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <!-- js -->
     <script src="./assets/js/script.js"></script>
   </body>
