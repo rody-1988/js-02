@@ -40,7 +40,6 @@ img {
 
 .l-header {
   background-color: rgba(255, 255, 255, 0);
-  margin-bottom: 40px;
   position: fixed;
   top: 0;
   right: 0;
@@ -138,13 +137,74 @@ img {
 }
 
 .p-fv {
-  margin-top: 100px;
+  margin-bottom: 80px;
 }
-
 .p-fv__content-text {
   font-family: "こころ明朝", "Kokoro", serif;
   font-size: 32px;
   text-align: center;
+}
+
+.p-news {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.p-news .l-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-inline: 60px;
+  position: relative;
+}
+.p-news .l-container::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+}
+.p-news .l-container::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  width: 2px;
+  height: 50px;
+  background-color: #000;
+}
+.p-news__line {
+  position: relative;
+  max-width: 600px;
+  padding-inline: 30px;
+}
+.p-news__line::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+}
+.p-news__line::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  right: -20px;
+  width: 2px;
+  height: 50px;
+  background-color: #1a331e;
+}
+.p-news__title {
+  font-size: 32px;
+  font-weight: normal;
+  padding-top: 50px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.p-news__text {
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */
