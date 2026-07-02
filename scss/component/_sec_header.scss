@@ -3,7 +3,9 @@
 .c-sec__header{
   width: 100%;
   height: 600px;
+  overflow: hidden;
+  margin-bottom: $space-xl;
 }
 .c-sec__header img{
-  object-fit: contain;
+  object-fit: cover;
 }

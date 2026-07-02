@@ -1,1 +1,62 @@
 @use "../foundation" as *;
+
+.p-lunch {
+  // メインカード
+  background-color: $color-white;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: normal;
+  }
+  &__price {
+    font-size: 20px;
+    font-weight: normal;
+  }
+  &__tax {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  &__set {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  &__caution {
+    font-size: 12px;
+  }
+  &__menu-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  &__menu-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+  }
+  &__text-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
