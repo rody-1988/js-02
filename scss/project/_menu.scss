@@ -1,0 +1,11 @@
+@use "../foundation" as *;
+
+.p-menu {
+  text-align: center;
+  padding: 100px 0;
+  &__title {
+    font-size: 54px;
+    font-weight: normal;
+    font-family: $font-kokoro;
+  }
+}
