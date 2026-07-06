@@ -1,11 +1,28 @@
 @use "../foundation" as *;
 
-.c-sec__header{
+.c-sec__header {
   width: 100%;
   height: 600px;
   overflow: hidden;
   margin-bottom: $space-xl;
 }
-.c-sec__header img{
-  object-fit: cover;
+.c-sec__header-img {
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.c-sec__header-img--lunch {
+  background-image: url("../../assets/image/parallax-02_pc.JPG");
+}
+.c-sec__header-img--kids {
+  background-image: url("../../assets/image/parallax-03_pc.JPG");
+}
+.c-sec__header-img--cake {
+  background-image: url("../../assets/image/parallax-05_pc.JPG");
+}
+.c-sec__header-img--drink {
+  background-image: url("../../assets/image/parallax-06_pc.JPG");
 }

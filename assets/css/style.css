@@ -82,6 +82,14 @@ img {
   margin-inline: auto;
 }
 
+.l-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
 .c-section__title {
   font-family: "こころ明朝", "Kokoro", serif;
   font-size: 35px;
@@ -160,8 +168,29 @@ img {
   margin-bottom: 80px;
 }
 
-.c-sec__header img {
-  object-fit: cover;
+.c-sec__header-img {
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.c-sec__header-img--lunch {
+  background-image: url("../../assets/image/parallax-02_pc.JPG");
+}
+
+.c-sec__header-img--kids {
+  background-image: url("../../assets/image/parallax-03_pc.JPG");
+}
+
+.c-sec__header-img--cake {
+  background-image: url("../../assets/image/parallax-05_pc.JPG");
+}
+
+.c-sec__header-img--drink {
+  background-image: url("../../assets/image/parallax-06_pc.JPG");
 }
 
 .p-fv {
@@ -282,13 +311,6 @@ img {
 }
 .p-lunch__caution {
   font-size: 12px;
-}
-.p-lunch__menu-wrapper {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-bottom: 60px;
 }
 .p-lunch__menu-card {
   display: flex;

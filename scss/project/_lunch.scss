@@ -41,13 +41,6 @@
   &__caution {
     font-size: 12px;
   }
-  &__menu-wrapper {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-bottom: 60px;
-  }
   &__menu-card {
     display: flex;
     justify-content: space-between;
