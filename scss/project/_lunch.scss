@@ -6,14 +6,15 @@
   &__wrapper {
     display: flex;
     justify-content: center;
-    // align-items: center;
     gap: 30px;
     margin-bottom: 60px;
   }
   &__card {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+  }
+  &__img{
+    margin-bottom: 20px;
   }
   &__header {
     display: flex;

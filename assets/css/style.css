@@ -81,6 +81,7 @@ img {
   width: 100%;
   padding-inline: 16px;
   margin-inline: auto;
+  margin-bottom: 80px;
 }
 
 .l-grid {
@@ -89,6 +90,21 @@ img {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-bottom: 60px;
+}
+
+.c-card {
+  display: flex;
+  justify-content: space-between;
+}
+.c-card__title {
+  font-size: 20px;
+  font-weight: normal;
+}
+.c-card__price {
+  font-size: 25px;
+}
+.c-card__tax {
+  font-size: 18px;
 }
 
 .c-section__title {
@@ -286,7 +302,9 @@ img {
 .p-lunch__card {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+}
+.p-lunch__img {
+  margin-bottom: 20px;
 }
 .p-lunch__header {
   display: flex;
@@ -319,14 +337,16 @@ img {
   margin-bottom: 10px;
 }
 
-.u-flex-sb {
-  display: flex;
-  justify-content: space-between;
+.u-underline {
+  border-bottom: 1px solid #000;
+}
+
+.u-flex-center {
   align-items: center;
 }
 
-.u-underline {
-  border-bottom: 1px solid #333;
+.u-flex-column {
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

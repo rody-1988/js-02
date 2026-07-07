@@ -1,4 +1,4 @@
-  <!doctype html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
@@ -152,7 +152,7 @@
       </section>
 
       <!-- menu -->
-      <section class="p-menu">
+      <section id="menu" class="p-menu">
         <h2 class="p-menu__title">Menu</h2>
       </section>
 
@@ -161,9 +161,9 @@
         <div class="l-container">
           <h2 class="c-section__title">Lunch<span>11:00~14:00</span></h2>
           <div class="p-lunch__wrapper">
-            <article class="p-lunch__card">
+            <article class="c-card u-flex-column">
               <img
-                class="p-lunch__card-img"
+                class="p-lunch__img"
                 src="assets/image/lunch01.webp"
                 alt="気まぐれハンバーグランチ
 "
@@ -179,7 +179,7 @@
                 ※内容はシェフの気まぐれでご用意しております。
               </p>
             </article>
-            <article class="p-lunch__card">
+            <article class="c-card u-flex-column">
               <img
                 class="p-lunch__img"
                 src="assets/image/lunch02.webp"
@@ -193,7 +193,7 @@
               </div>
               <p class="p-lunch__set">（サラダ/スープ）</p>
             </article>
-            <article class="p-lunch__card">
+            <article class="c-card u-flex-column">
               <img
                 class="p-lunch__img"
                 src="assets/image/lunch03.webp"
@@ -208,66 +208,59 @@
               <p class="p-lunch__card-set">（副菜3種 / パン / ミニデザート）</p>
             </article>
           </div>
-        <!-- 画像なし -->
+          <!-- 画像なし -->
           <div class="p-lunch__menu-wrapper l-grid">
-            <div class="p-lunch__menu">
-              <article class="p-lunch__menu-card u-flex-sb u-underline">
-                <div class="p-lunch__text-header">
-                  <h3 class="p-lunch__title">
-                    名物!! 日替わりランチ（数量限定）
-                  </h3>
-                  <p class="p-lunch__set">（副菜3種/ライス/スープ）</p>
-                  <p class="p-lunch__caution">
-                    ※内容は日替わりでご用意しております。
-                  </p>
-                </div>
-                <div class="p-lunch__price-wrapper">
-                  <p class="p-lunch__price">
-                    ¥1,000<span class="p-lunch__tax">（税込）</span>
-                  </p>
-                </div>
-              </article>
-            </div>
-            <article class="p-lunch__menu-card u-flex-sb u-underline">
+            <article class="c-card u-flex-center u-underline">
               <div class="p-lunch__text-header">
-                <h3 class="p-lunch__title">ローストチキン丼</h3>
+                <h3 class="c-card__title">名物!! 日替わりランチ（数量限定）</h3>
+                <p class="p-lunch__set">（副菜3種/ライス/スープ）</p>
+                <p class="p-lunch__caution">
+                  ※内容は日替わりでご用意しております。
+                </p>
+              </div>
+              <div class="p-lunch__price-wrapper">
+                <p class="c-card__price">
+                  ¥1,000<span class="c-card__tax">（税込）</span>
+                </p>
+              </div>
+            </article>
+            <article class="c-card u-flex-center u-underline">
+              <div class="p-lunch__text-header">
+                <h3 class="c-card__title">ローストチキン丼</h3>
                 <p class="p-lunch__set">（副菜3種/ライス/スープ）</p>
               </div>
               <div class="p-lunch__price-wrapper">
-                <p class="p-lunch__price">
-                  ¥1,150<span class="p-lunch__tax">（税込）</span>
+                <p class="c-card__price">
+                  ¥1,150<span class="c-card__tax">（税込）</span>
                 </p>
               </div>
             </article>
-            <article class="p-lunch__menu-card u-flex-sb u-underline">
+            <article class="c-card u-flex-center u-underline">
               <div class="p-lunch__text-header">
-                <h3 class="p-lunch__title">サラダチキンセット</h3>
+                <h3 class="c-card__title">サラダチキンセット</h3>
                 <p class="p-lunch__set">（副菜3種/パン/ミニデザート）</p>
               </div>
               <div class="p-lunch__price-wrapper">
-                <p class="p-lunch__price">
-                  ¥1,000<span class="p-lunch__tax">（税込）</span>
+                <p class="c-card__price">
+                  ¥1,000<span class="c-card__tax">（税込）</span>
                 </p>
               </div>
             </article>
-            <article class="p-lunch__menu-card u-flex-sb u-underline">
+            <article class="c-card u-flex-center u-underline">
               <div class="p-lunch__text-header">
-                <h3 class="p-lunch__title">グリーンサラダセット</h3>
+                <h3 class="c-card__title">グリーンサラダセット</h3>
                 <p class="p-lunch__set">（副菜3種/パン/ミニデザート）</p>
               </div>
               <div class="p-lunch__price-wrapper">
-                <p class="p-lunch__price">
-                  ¥950<span class="p-lunch__tax">（税込）</span>
+                <p class="c-card__price">
+                  ¥950<span class="c-card__tax">（税込）</span>
                 </p>
               </div>
             </article>
-          </div>
           </div>
         </div>
         <!-- l-grid -->
       </section>
-
-
 
       <div class="c-sec__header">
         <div class="c-sec__header-img c-sec__header-img--lunch"></div>
@@ -276,125 +269,105 @@
 
       <section id="alacarte" class="p-alacarte l-container">
         <h2 class="c-section__title">Alacarte<span>14:00~18:00</span></h2>
-        <div class="p-alacarte__wrapper l-grid">
-          <article class="p-alacarte__main u-underline">
-            <div class="p-alacarte__header u-flex-sb ">
-              <h3 class="p-alacarte__subtitle">カツカレー</h3>
-              <p class="p-alacarte__price">
-                ¥1,350<span class="p-alacarte__tax">（税込）</span>
-              </p>
-            </div>
+        <div class="l-grid">
+          <article class="c-card u-flex-center u-underline">
+            <h3 class="c-card__title">カツカレー</h3>
+            <p class="c-card__price">
+              ¥1,350<span class="c-card__tax">（税込）</span>
+            </p>
           </article>
-          <article class="p-alacarte__main u-underline">
-            <div class="p-alacarte__header u-flex-sb">
-              <h3 class="p-alacarte__subtitle">菜園風ロコモコ</h3>
-              <p class="p-alacarte__price">
-                ¥1,350<span class="p-alacarte__tax">（税込）</span>
-              </p>
-            </div>
+          <article class="c-card u-flex-center u-underline">
+            <h3 class="c-card__title">菜園風ロコモコ</h3>
+            <p class="c-card__price">
+              ¥1,350<span class="c-card__tax">（税込）</span>
+            </p>
           </article>
-          <article class="p-alacarte__main u-underline">
-            <div class="p-alacarte__header u-flex-sb">
-              <h3 class="p-alacarte__subtitle">コンビネーションサンド</h3>
-              <p class="p-alacart__price">
-                ¥1,000<span class="p-alacarte__tax">（税込）</span>
+          <article class="c-card u-flex-center u-underline">
+              <h3 class="c-card__subtitle">
+                コンビネーションサンド
+              </h3>
+              <p class="c-card__price">
+                ¥1,000<span class="c-card__tax">（税込）</span>
               </p>
-            </div>
+      
           </article>
-          <article class="p-alacarte__main u-underline">
-            <div class="p-alacarte__header u-flex-sb">
-              <h3 class="p-alacarte__subtitle">カツサンド</h3>
-              <p class="p-alacarte__price">
-                ¥1,300<span class="p-alacarte__tax">（税込）</span>
+          <article class="c-card u-flex-center u-underline">
+              <h3 class="c-card__title">カツサンド</h3>
+              <p class="c-card__price">
+                ¥1,300<span class="c-card__tax">（税込）</span>
               </p>
-            </div>
+        
           </article>
-          <article class="p-alacarte__main u-underline">
-            <div class="p-alacarte__header u-flex-sb">
-              <h3 class="p-alacarte__subtitle">ローストチキンサンド</h3>
-              <p class="p-alacarte__price">
-                ¥1,300<span class="p-alacarte__tax">（税込）</span>
+          <article class="c-card u-flex-center u-underline">
+              <h3 class="c-card__title">ローストチキンサンド</h3>
+              <p class="c-card__price">
+                ¥1,300<span class="c-card__tax">（税込）</span>
               </p>
-            </div>
           </article>
         </div>
 
         <!-- pizza -->
 
         <h2 class="c-section__title">Pizza<span>14:00~18:00</span></h2>
-        <div class="p-alacarte__wrapper l-grid">
-          <article class="p-alacarte__pizza u-underline">
-            <div class="p-alacarte-header u-flex-sb">
-              <h3 class="p-alacarte__subtitle">トマトのピザ</h3>
-              <p class="p-alacarte__price">
-                ¥1,000<span class="p-alacarte__tax">（税込）</span>
+        <div class="l-grid">
+          <article class="c-card u-flex-center u-underline">
+            <h3 class="c-card__title">トマトのピザ</h3>
+            <p class="c-card__price">
+                ¥1,000<span class="c-card__tax">（税込）</span>
               </p>
-            </div>
+          
           </article>
-          <article class="p-alacarte__pizza u-underline">
-            <div class="p-alacarte__header u-flex-sb">
-              <h3 class="p-alacarte__subtitle">ベーコンとじゃがいものピザ</h3>
-              <p class="p-alacarte__price">
-                ¥1,100<span class="p-alacarte__tax">（税込）</span>
+          <article class="c-card u-flex-center u-underline">
+            <h3 class="c-card__title">ベーコンとじゃがいものピザ</h3>
+            <p class="c-card__price">
+                ¥1,100<span class="c-card__tax">（税込）</span>
               </p>
-            </div>
+        
           </article>
-          <article class="p-alacarte__pizza u-underline">
-            <div class="p-alacarte__header u-flex-sb">
-              <h3 class="p-alacarte__subtitle">彩り野菜のピザ</h3>
-              <p class="p-alacarte__price">
-                ¥1,200<span class="p-alacarte__tax">（税込）</span>
+          <article class="c-card u-flex-center u-underline">
+            <h3 class="c-card__title">彩り野菜のピザ</h3>
+            <p class="c-card__price">
+                ¥1,200<span class="c-card__tax">（税込）</span>
               </p>
-            </div>
           </article>
         </div>
 
         <!-- ・・・・フード・・・・ -->
 
         <h2 class="c-section__title">Food<span>14:30~18:00</span></h2>
-        <div class="p-alacarte__wrapper
-        l-grid">
-          <article class="p-alacarte__food">
-            <div class="p-alacarte__header">
-              <h3 class="p-alacarte__subtitle">
-                シーザーサラダ とろ～り玉子添え
-              </h3>
-              <p class="p-alacarte__price">
-                ¥1,000<span class="p-alacarte__tax">（税込）</span>
-              </p>
-            </div>
+        <div class="l-grid">
+          <article class="c-card u-flex-center u-underline">
+            <h3 class="c-card__title">シーザーサラダ とろ～り玉子添え</h3>
+            <p class="c-card__price">
+              ¥1,000<span class="c-card__tax">（税込）</span>
+            </p>
           </article>
-          <article class="p-alacarte__food">
-            <div class="p-alacarte__header">
-              <h3 class="p-alacarte__subtitle">ポテトフライ</h3>
-              <p class="p-alacarte__price">
-                ¥580<span class="p-alacarte__tax">（税込）</span>
+          <article class="c-card u-flex-center u-underline">
+            <h3 class="c-card__title">ポテトフライ</h3>
+              <p class="p-alacarte__price c-card__price">
+                ¥580<span class="p-alacarte__tax c-card__tax">（税込）</span>
               </p>
-            </div>
+
           </article>
-          <article class="p-alacarte__food">
-            <div class="p-alacarte__header">
-              <h3 class="p-alacarte__subtitle">鶏のからあげ</h3>
-              <p class="p-alacarte__price">
-                ¥580<span class="p-alacarte__tax">（税込）</span>
+          <article class="c-card u-flex-center u-underline">
+            <h3 class="c-card__title">鶏のからあげ</h3>
+              <p class="p-alacarte__price c-card__price">
+                ¥580<span class="p-alacarte__tax c-card__tax">（税込）</span>
               </p>
-            </div>
+            
           </article>
-          <article class="p-alacarte__food">
-            <div class="p-alacarte__header">
-              <h3 class="p-alacarte__subtitle">フィッシュ＆チップス</h3>
-              <p class="p-alacarte__price">
-                ¥680<span class="p-alacarte__tax">（税込）</span>
-              </p>
-            </div>
+          <article class="c-card u-flex-center u-underline">
+            <h3 class="c-card__title">フィッシュ＆チップス</h3>
+            <p class="c-card__price">
+              ¥680<span class="c-card__tax">（税込）</span>
+            </p>
+      
           </article>
-          <article class="p-alacarte__food">
-            <div class="p-alacarte__header">
-              <h3 class="p-alacarte__subtitle">ポテから</h3>
-              <p class="p-alacarte__price">
-                ¥780<span class="p-alacarte__tax">（税込）</span>
-              </p>
-            </div>
+          <article class="c-card u-flex-center u-underline">
+            <h3 class="c-card__title">ポテトフライ</h3>
+            <p class="c-card__price">
+              ¥780<span class="c-card__tax">（税込）</span>
+            </p>
           </article>
         </div>
         <h2 class="c-section__title">Beer Set<span>14:30~18:00</span></h2>
@@ -402,8 +375,8 @@
           <article class="p-alacarte__beer">
             <div class="p-alacarte__header">
               <h3 class="p-alacarte__title">◆箕面ビール１本＋おつまみ１種</h3>
-              <p class="p-alacarte__price">
-                ¥1,200<span class="p-alacarte__tax">（税込）</span>
+              <p class="p-alacarte__price c-card__price">
+                ¥1,200<span class="p-alacarte__tax c-card__tax">（税込）</span>
               </p>
             </div>
             <h3 class="p-alacarte__subtitle">箕面ビール</h3>
@@ -430,7 +403,7 @@
         </div>
       </section>
 
-      <div class="c-sec_header">
+      <div class="c-sec__header">
         <div class="c-sec__header-img c-sec__header-img--kids"></div>
       </div>
 
@@ -455,7 +428,7 @@
         </p>
       </section>
 
-      <div class="c-sec_header">
+      <div class="c-sec__header">
         <div class="c-sec__header-img c-sec__header-img--cake"></div>
       </div>
       <section id="cake" class="p-cake">
@@ -516,7 +489,7 @@
       </section>
 
       <!-- ドリンク -->
-      <div class="c-sec_header">
+      <div class="c-sec__header">
         <div class="c-sec__header-img c-sec__header-img--drink"></div>
       </div>
       <section id="drink" class="p-drink l-container">
@@ -786,10 +759,7 @@
 
     <!-- footer -->
     <footer class="l-footer">
-      <div class="l-container">
-        <img src="" alt="" />
-        <p class="l-footer__copy">© guu-note</p>
-      </div>
+      <p class="l-footer__copy">© guu-note</p>
     </footer>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
