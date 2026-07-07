@@ -1,1 +1,16 @@
 @use "../foundation" as *;
+.p-drink{
+  &__wrapper{
+    max-width: 800px;
+    margin-inline: auto;
+
+    & .c-card{
+      margin-bottom: $space-m;
+    }
+  }
+  &__subtitle{
+    line-height: 1.8;
+    margin-bottom: $space-xl;
+  }
+
+}

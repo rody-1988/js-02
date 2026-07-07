@@ -40,7 +40,7 @@ img {
 }
 
 section {
-  padding-bottom: 80px;
+  padding: 80px 0;
 }
 
 .l-header {
@@ -102,7 +102,6 @@ section {
 }
 .c-card__title {
   font-size: 20px;
-  font-weight: normal;
 }
 .c-card__price {
   font-size: 25px;
@@ -347,7 +346,18 @@ section {
 
 .p-kids {
   background-color: #fff;
-  padding-top: 80px;
+}
+
+.p-drink__wrapper {
+  max-width: 800px;
+  margin-inline: auto;
+}
+.p-drink__wrapper .c-card {
+  margin-bottom: 24px;
+}
+.p-drink__subtitle {
+  line-height: 1.8;
+  margin-bottom: 80px;
 }
 
 .u-underline {
