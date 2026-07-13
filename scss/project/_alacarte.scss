@@ -1,6 +1,28 @@
 @use "../foundation" as *;
 
-.p-alacarte{
+.p-alacarte {
   background-color: $color-accent;
   padding-top: 80px;
+
+  &__beer-wrapper {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__list {
+    margin: 20px 0;
+  }
+  &__item {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 8px;
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
 }
