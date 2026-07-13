@@ -2,4 +2,10 @@
 
 .p-kids{
   background-color: $color-white;
+  &__caution{
+    text-align: center;
+  }
+  .l-grid{
+    margin-bottom: 100px;
+  }
 }

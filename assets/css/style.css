@@ -367,6 +367,19 @@ section {
 .p-kids {
   background-color: #fff;
 }
+.p-kids__caution {
+  text-align: center;
+}
+.p-kids .l-grid {
+  margin-bottom: 100px;
+}
+
+.p-cake {
+  background-color: #fffbed;
+}
+.p-cake__wrapper {
+  max-width: 800px;
+}
 
 .p-drink__wrapper {
   max-width: 800px;
