@@ -380,6 +380,51 @@ section {
 .p-cake__wrapper {
   max-width: 800px;
 }
+.p-cake__subtitle {
+  margin-bottom: 16px;
+}
+.p-cake__menu {
+  margin-bottom: 20px;
+}
+.p-cake__step {
+  position: relative;
+  width: 165px;
+}
+.p-cake__step-img {
+  height: auto;
+}
+.p-cake__step-text {
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.p-cake__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+.p-cake__item::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+.p-cake__name {
+  font-size: 18px;
+}
+.p-cake__price {
+  font-size: 25px;
+}
+.p-cake__tax {
+  font-size: 18px;
+  padding-left: 16px;
+}
 
 .p-drink__wrapper {
   max-width: 800px;

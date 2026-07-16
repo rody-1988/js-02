@@ -1,7 +1,54 @@
 @use "../foundation" as *;
-.p-cake{
+.p-cake {
   background-color: $color-accent;
-  &__wrapper{
+  &__wrapper {
     max-width: 800px;
+  }
+  &__subtitle {
+    margin-bottom: 16px;
+  }
+  &__menu{
+    margin-bottom: 20px;
+  }
+  &__step {
+    position: relative;
+    width: 165px;
+    &-img {
+      height: auto;
+    }
+    &-text {
+      font-size: 18px;
+      font-weight: bold;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      content: "・";
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+  }
+  &__name{
+    font-size: 18px;
+  }
+  &__price {
+    font-size: 25px;
+  }
+  &__tax {
+    font-size: 18px;
+    padding-left: 16px;
   }
 }
