@@ -429,9 +429,13 @@ section {
 .p-drink__wrapper {
   max-width: 800px;
   margin-inline: auto;
+  margin-bottom: 100px;
 }
 .p-drink__wrapper .c-card {
   margin-bottom: 24px;
+}
+.p-drink__wrapper:last-of-type {
+  margin-bottom: 20px;
 }
 .p-drink__subtitle {
   line-height: 1.8;
