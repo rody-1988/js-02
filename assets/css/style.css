@@ -442,6 +442,21 @@ section {
   margin-bottom: 80px;
 }
 
+.p-coffee {
+  background-color: #6d1f37;
+  width: 100%;
+  margin-top: -10px;
+  padding: 100px 0;
+  color: #fff;
+}
+.p-coffee__logo {
+  width: 200px;
+  margin-inline: auto;
+}
+.p-coffee__logo-img {
+  margin: 0 auto;
+}
+
 .u-underline {
   border-bottom: 1px solid #000;
 }
