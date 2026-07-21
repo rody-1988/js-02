@@ -95,6 +95,14 @@ section {
   margin-bottom: 60px;
 }
 
+.l-grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.l-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .c-card {
   display: flex;
   justify-content: space-between;
@@ -455,6 +463,33 @@ section {
 }
 .p-coffee__logo-img {
   margin: 0 auto;
+}
+.p-coffee__text {
+  text-align: center;
+  padding: 20px 0;
+}
+.p-coffee .l-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-bottom: 0;
+}
+.p-coffee .l-grid .u-underline {
+  border-bottom: 1px solid #fff;
+}
+.p-coffee__menu .l-grid {
+  gap: 30px;
+}
+.p-coffee__img {
+  margin-bottom: 30px;
+  max-width: 80%;
+}
+.p-coffee__card {
+  text-align: center;
+  padding: 20px 0;
+}
+.p-coffee__card .l-grid {
+  gap: 0;
+  margin-bottom: 20px;
 }
 
 .u-underline {

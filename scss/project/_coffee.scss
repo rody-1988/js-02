@@ -6,11 +6,39 @@
   margin-top: -10px;
   padding: 100px 0;
   color: $color-white;
-  &__logo{
+  &__logo {
     width: 200px;
     margin-inline: auto;
-    &-img{
+    &-img {
       margin: 0 auto;
+    }
+  }
+  &__text {
+    text-align: center;
+    padding: 20px 0;
+  }
+  & .l-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-bottom: 0;
+    .u-underline {
+      border-bottom: 1px solid $color-white;
+    }
+  }
+  //クラスにクラスはいいのか？
+  &__menu .l-grid {
+    gap: 30px;
+  }
+  &__img {
+    margin-bottom: 30px;
+    max-width: 80%;
+  }
+  &__card {
+    text-align: center;
+    padding: 20px 0;
+    & .l-grid {
+      gap: 0;
+      margin-bottom: 20px;
     }
   }
 }
