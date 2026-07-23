@@ -39,10 +39,6 @@ img {
   object-fit: cover;
 }
 
-section {
-  padding: 40px 0;
-}
-
 .l-header {
   background-color: rgba(255, 255, 255, 0);
   position: fixed;
@@ -89,6 +85,7 @@ section {
   width: 100%;
   padding-inline: 16px;
   margin-inline: auto;
+  padding-bottom: 20px;
 }
 
 .l-grid {
@@ -142,6 +139,7 @@ section {
   align-items: baseline;
   gap: 30px;
   margin-bottom: 60px;
+  padding-top: 20px;
 }
 .c-section__title span {
   font-size: 20px;
@@ -232,9 +230,6 @@ section {
   background-image: url("../../assets/image/parallax-06_pc.JPG");
 }
 
-.p-fv {
-  margin-top: 40px;
-}
 .p-fv__content-text {
   font-family: "こころ明朝", "Kokoro", serif;
   font-size: 32px;
@@ -374,6 +369,9 @@ section {
 }
 .p-alacarte__list {
   margin: 20px 0;
+}
+.p-alacarte__list:last-of-type {
+  margin-bottom: 0;
 }
 .p-alacarte__item {
   list-style: disc;
