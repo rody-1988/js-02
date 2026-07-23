@@ -1,6 +1,10 @@
 @use "../foundation" as *;
 
 .l-footer {
-  background-color: $color-accent;
-  margin-top: $space-l;
+  background-color: #f0c433;
+  text-align: center;
+  padding: 50px 0; 
+  &__img{
+    width: 200px;
+  }
 }
