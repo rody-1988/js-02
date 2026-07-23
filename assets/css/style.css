@@ -103,6 +103,14 @@ section {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.l-flex {
+  display: flex;
+}
+
+.l-flex-aic {
+  align-items: center;
+}
+
 .c-card {
   display: flex;
   justify-content: space-between;
@@ -490,6 +498,35 @@ section {
 .p-coffee__card .l-grid {
   gap: 0;
   margin-bottom: 20px;
+}
+
+.p-access {
+  background-color: #fffbed;
+}
+.p-access__address {
+  flex: 1;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.p-access__img {
+  width: 200px;
+}
+.p-access__tel {
+  width: 30px;
+}
+.p-access__link {
+  padding-left: 20px;
+  color: #264062;
+  font-size: 20px;
+}
+.p-access__text a {
+  border-bottom: 1px solid #333;
+  font-weight: bold;
+}
+.p-access__map {
+  flex: 1;
 }
 
 .u-underline {

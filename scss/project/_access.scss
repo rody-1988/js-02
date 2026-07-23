@@ -1,1 +1,33 @@
 @use "../foundation" as *;
+
+.p-access{
+  background-color: $color-accent;
+
+  &__address{
+    flex: 1;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  }
+  &__img
+  {
+    width: 200px;
+  }
+  &__tel{
+    width: 30px;
+  }
+  &__link{
+    padding-left: 20px;
+    color: #264062;
+    font-size: 20px;
+  }
+  &__text a{
+    border-bottom: 1px solid #333;
+    font-weight: bold;
+  }
+
+  &__map {
+    flex: 1;
+  }
+}
