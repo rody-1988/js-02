@@ -204,6 +204,11 @@ img {
   height: 600px;
   overflow: hidden;
 }
+@media screen and (max-width: 900px) {
+  .c-sec__header {
+    height: 300px;
+  }
+}
 
 .c-sec__header-img {
   width: 100%;
@@ -212,6 +217,11 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 900px) {
+  .c-sec__header-img {
+    height: 300px;
+  }
 }
 
 .c-sec__header-img--lunch {
@@ -263,6 +273,11 @@ img {
   text-align: center;
   line-height: 1.8;
   text-shadow: 1px 1px #000;
+}
+@media screen and (max-width: 900px) {
+  .p-fv__content-text {
+    font-size: 24px;
+  }
 }
 
 .p-news {

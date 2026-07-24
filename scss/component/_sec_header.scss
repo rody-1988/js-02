@@ -4,6 +4,9 @@
   width: 100%;
   height: 600px;
   overflow: hidden;
+  @include sp {
+    height: 300px;
+  }
 }
 .c-sec__header-img {
   width: 100%;
@@ -12,6 +15,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include sp{
+    height: 300px;
+  }
 }
 .c-sec__header-img--lunch {
   background-image: url("../../assets/image/parallax-02_pc.JPG");
