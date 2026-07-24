@@ -3,9 +3,21 @@
 .p-fv {
   width: 100%;
   height: 100%;
-  &__content-text {
-    font-family: $font-kokoro;
-    font-size: 32px;
-    text-align: center;
+  position: relative;
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    
+    &-text {
+      font-family: $font-kokoro;
+      color: $color-white;
+      font-size: 32px;
+      text-align: center;
+      line-height: 1.8;
+      text-shadow: 1px 1px #000;
+    }
   }
 }
