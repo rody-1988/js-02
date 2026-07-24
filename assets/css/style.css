@@ -230,6 +230,24 @@ img {
   background-image: url("../../assets/image/parallax-06_pc.JPG");
 }
 
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+.swiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-fv {
+  width: 100%;
+  height: 100%;
+}
 .p-fv__content-text {
   font-family: "こころ明朝", "Kokoro", serif;
   font-size: 32px;
@@ -529,6 +547,7 @@ img {
 }
 .p-access__map {
   flex: 1;
+  overflow: hidden;
 }
 
 .u-underline {
