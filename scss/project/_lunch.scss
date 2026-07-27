@@ -8,6 +8,11 @@
     justify-content: center;
     gap: 30px;
     margin-bottom: 60px;
+    @include sp {
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
   }
   &__card {
     display: flex;

@@ -91,17 +91,24 @@ img {
 .l-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-bottom: 60px;
 }
 
 .l-grid--2 {
   grid-template-columns: repeat(2, 1fr);
 }
+@media screen and (max-width: 900px) {
+  .l-grid--2 {
+    grid-template-columns: 1fr;
+  }
+}
 
 .l-grid--3 {
   grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 900px) {
+  .l-grid--3 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .l-flex {
@@ -343,7 +350,7 @@ img {
 
 .p-menu {
   text-align: center;
-  padding: 100px 0;
+  padding: 40px 0;
 }
 .p-menu__title {
   font-size: 54px;
@@ -359,6 +366,13 @@ img {
   justify-content: center;
   gap: 30px;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 900px) {
+  .p-lunch__wrapper {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
 }
 .p-lunch__card {
   display: flex;
@@ -522,28 +536,42 @@ img {
   text-align: center;
   padding: 20px 0;
 }
-.p-coffee .l-grid {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  margin-bottom: 0;
-}
-.p-coffee .l-grid .u-underline {
-  border-bottom: 1px solid #fff;
-}
-.p-coffee__menu .l-grid {
-  gap: 30px;
-}
 .p-coffee__img {
   margin-bottom: 30px;
   max-width: 80%;
+}
+@media screen and (max-width: 900px) {
+  .p-coffee__img {
+    margin-bottom: 10px;
+  }
 }
 .p-coffee__card {
   text-align: center;
   padding: 20px 0;
 }
-.p-coffee__card .l-grid {
-  gap: 0;
-  margin-bottom: 20px;
+@media screen and (max-width: 900px) {
+  .p-coffee__card {
+    padding-inline: 10%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .p-coffee__price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  .p-coffee__language {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 900px) {
+  .p-coffee__menu .u-underline--white {
+    border-bottom: none;
+  }
 }
 
 .p-access {
@@ -578,6 +606,10 @@ img {
 
 .u-underline {
   border-bottom: 1px solid #000;
+}
+
+.u-underline--white {
+  border-bottom: 1px solid #fff;
 }
 
 .u-flex-center {

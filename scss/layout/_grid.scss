@@ -3,13 +3,16 @@
 .l-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-bottom: 60px;
 }
 .l-grid--2 {
   grid-template-columns: repeat(2, 1fr);
+  @include sp {
+    grid-template-columns: 1fr;
+  }
 }
 .l-grid--3 {
   grid-template-columns: repeat(3, 1fr);
+  @include sp {
+    grid-template-columns: 1fr;
+  }
 }
