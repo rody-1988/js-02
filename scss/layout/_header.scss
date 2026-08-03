@@ -2,12 +2,16 @@
 
 .l-header {
   background-color: rgba($color: white, $alpha: 0);
+  transition: background-color 0.3s ease;
   // margin-bottom: $space-l;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1000;
+  &.is-scrolled {
+    background-color: $color-white;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
