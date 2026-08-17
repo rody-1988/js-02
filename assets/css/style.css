@@ -56,11 +56,14 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 .l-header__right {
-  display: flex;
+  display: block;
   gap: 24px;
   padding: 0 60px;
+  position: relative;
 }
 .l-header__logo {
   width: 150px;
@@ -232,9 +235,9 @@ img {
 }
 
 .c-hamburger {
-  position: fixed;
-  top: 40px;
-  right: 20px;
+  position: absolute;
+  top: 6px;
+  right: 0;
   width: 40px;
   height: 30px;
   background: none;
