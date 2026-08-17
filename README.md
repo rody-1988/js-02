@@ -1,485 +1,169 @@
-# Guu-note
+# guu-note 模写コーディング
 
-個人制作・模写コーディングです。
-[goo-note](https://goo-note.info/)
-レストラン・カフェのお店
+レストラン・カフェサイト「guu-note」を参考にした模写コーディング作品です。
+
+参考サイトのデザインやレイアウトを観察し、HTML / SCSS / JavaScriptを使用して実装しています。
+
+※本制作は学習目的の模写作品です。
 
 ---
 
-## 使用技術
+## 🔗 参考サイト
+
+https://goo-note.info/
+
+---
+
+## 📖 制作概要
+
+- 制作：個人制作
+- 種別：Webサイト模写
+- 目的：HTML / SCSS / JavaScriptの実践学習
+- 参考サイト：guu-note
+
+今回の制作では、デザインの再現だけではなく、サイト全体の構造やレスポンシブ対応、SCSSの設計、JavaScriptによるインタラクションまで意識しています。
+
+---
+
+## 🛠 使用技術
 
 - HTML
-- Sass（SCSS）
+- SCSS（Sass）
 - JavaScript
 - Node.js
 - npm
 - Git
 - GitHub
-- CSS設計（FLOCSS + BEM風）
+- Swiper
+
+### CSS設計
+
+- FLOCSS
+- BEMをベースにした命名
 
 ---
 
-# ディレクトリ構成
+## ✨ 実装内容
 
-```txt
-scss/
-├── foundation/
-│   ├── _variables.scss
-│   ├── _mixins.scss
-│   ├── _reset.scss
-│   ├── _base.scss
-│   └── _index.scss
-│
-├── layout/
-│   ├── _header.scss
-│   ├── _footer.scss
-│   ├── _container.scss
-│   └── _index.scss
-│
-├── component/
-│   ├── _button.scss
-│   ├── _card.scss
-│   ├── _title.scss0
-│   ├── _animation.scss
-│   └── _index.scss
-│
-├── project/
-│   ├── _fv.scss
-│   ├── _news.scss
-│   ├── _lunch.scss
-│   ├── _alacarte.scss
-│   ├── _kids.scss
-│   ├── _cake.scss
-│   ├── _drink.scss
-│   ├── _access.scss
-│   └── _index.scss
-│
-├── utility/
-│   ├── _utility.scss
-│   └── _index.scss
-│
-└── style.scss
-```
+- レスポンシブWebデザイン
+- ハンバーガーメニュー
+- ナビゲーション
+- Swiperを使用したスライダー
+- スクロール・表示アニメーション
+- パララックス表現
+- hoverアニメーション
+- レストラン・カフェのメニュー表示
+- SNS・LINEなどのリンクエリア
 
 ---
 
-# 開発環境
+## 🎯 制作で意識したこと
 
-## 必要環境
+### HTML構造
 
-- Node.js（LTS版推奨）
-- npm
-- Git
-- VS Code
+ページの情報構造を意識し、header・main・section・footerなどのセマンティックなHTML要素を使用しています。
 
----
+### CSS設計
 
-# 初回セットアップ
+FLOCSSをベースに、役割ごとにSCSSを分割しています。
 
-## 1. プロジェクト作成
-
-```bash
-mkdir project-name
-cd project-name
-```
-
-### メモ
-
-- mkdir → フォルダ作成
-- cd → フォルダ移動
-
----
-
-## 2. Git初期化
-
-```bash
-git init
-```
-
-### 確認
-
-```bash
-git status
-```
-
-### メモ
-
-このフォルダをGit管理する。
-
----
-
-## 3. npm初期化
-
-```bash
-npm init -y
-```
-
-生成ファイル
-
-```txt
-package.json
-```
-
-### メモ
-
-プロジェクト情報を管理するファイル。
-
----
-
-## 4. Sassインストール
-
-```bash
-npm install sass
-```
-
-生成ファイル
-
-```txt
-node_modules/
-package-lock.json
-```
-
----
-
-## 5. package.json設定
-
-```json
-{
-  "scripts": {
-    "sass": "sass --watch scss:assets/css"
-  }
-}
-```
-
----
-
-## 6. Sass監視開始
-
-```bash
-npm run sass
-```
-
-### メモ
-
-scss
-
-```txt
-scss/style.scss
-```
-
-↓
-
-css
-
-```txt
-assets/css/style.css
-```
-
-へ自動コンパイルされる。
-
----
-
-# GitHub運用
-
-## .gitignore作成
-
-```bash
-touch .gitignore
-```
-
-内容
-
-```txt
-node_modules/
-```
-
----
-
-## なぜ必要？
-
-node_modules は npm が自動生成する。
-
-GitHubにはアップロードせず、
-
-```txt
-package.json
-package-lock.json
-```
-
-から再生成する。
-
----
-
-## GitHubへPush
-
-初回
-
-```bash
-git remote add origin リポジトリURL
-git branch -M main
-git push -u origin main
-```
-
-2回目以降
-
-```bash
-git push
-```
-
----
-
-# Git運用
-
-## コミット例
-
-初期設定
-
-```bash
-git add .
-git commit -m "初期設定"
-```
-
-ヘッダー完成
-
-```bash
-git add .
-git commit -m "header作成"
-```
-
-FV完成
-
-```bash
-git add .
-git commit -m "fv作成"
-```
-
-Feature完成
-
-```bash
-git add .
-git commit -m "feature作成"
-```
-
-Contact完成
-
-```bash
-git add .
-git commit -m "contact作成"
-```
-
----
-
-## メモ
-
-戻りたいポイントごとにコミットする。
-
----
-
-# CSS設計
-
-## layout
-
-```html
-l-header l-container
-```
-
-サイト全体のレイアウト管理用。
-
-### メモ
-
-- 横幅
-- header
-- footer
-- grid
-- flex
-
-など配置を担当する。
-
-見た目より構造を意識する。
-
----
-
-## component
-
-```html
-c-button c-card c-title
-```
-
-再利用するパーツ用。
-
-### メモ
-
-別ページでも使い回せるものをcomponent化する。
-
-例
-
-- ボタン
-- カード
-- タイトル
-- ナビ
-- ハンバーガーボタン
-- フェードインアニメーション
-
----
-
-## project
-
-```html
-p-fv p-concept
-```
-
-ページ固有のスタイル用。
-
-### メモ
-
-そのページだけで使うclassを書く。
-
-再利用しない。
-
----
-
-## utility
-
-```html
-u-center u-hidden
-```
-
-微調整用。
-
-### メモ
-
-utilityを増やしすぎない。
-
-必要になった時だけ追加する。
-
----
-
-# Sassの管理
-
-## foundation/\_index.scss
-
-```scss
-@forward "variables";
-@forward "mixins";
-@forward "reset";
-@forward "base";
-```
-
----
-
-## 各ファイルでの読み込み
-
-```scss
-@use "../foundation" as *;
-```
-
-### メモ
-
-foundationで変数・mixinをまとめて管理する。
-
----
-
-## style.scss
-
-```scss
-@use "foundation";
-@use "layout";
-@use "component";
-@use "project";
-@use "utility";
-```
-
-### メモ
-
-style.scssには直接CSSを書かない。
-
-読み込み専用にする。
-
----
-
-# media query
-
-## 使用例
-
-```scss
-@include sp {
-}
-```
-
----
-
-## mixin
-
-```scss
-@mixin sp {
-  @media screen and (max-width: #{$breakpoint-sp}) {
-    @content;
-  }
-}
-```
-
-### メモ
-
-スマホ対応を統一して管理する。
-
----
-
-# 命名ルール
-
-```txt
+```text
 l- → layout
 c- → component
 p- → project
 u- → utility
 ```
 
----
+共通して使用するパーツはcomponent、ページ固有のスタイルはprojectとして整理しています。
 
-# コーディングルール
+### レスポンシブ対応
 
-- component化を意識する
-- 再利用できるclass名をつける
-- class名は見た目ではなく役割でつける
-- style.scssには直接CSSを書かない
-- Sassを分割して管理する
-- layoutに余白を書きすぎない
-- section余白はproject側で管理する
-- 共通化できるものはcomponent化する
-- HTMLを先に組み、その後Sassを書く
+PCとスマートフォンでレイアウトや画像を切り替え、画面幅に応じて表示が崩れないように調整しています。
+
+### JavaScript
+
+ハンバーガーメニューやスライダー、アニメーションなど、ユーザー操作やスクロールに合わせた動きを実装しています。
 
 ---
 
-# 自分用メモ
+## 📂 ディレクトリ構成
 
-## 困ったら考えること
-
-### これは再利用する？
-
-YES → component
-
-NO → project
+```text
+guu-note/
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── image/
+│
+├── scss/
+│   ├── foundation/
+│   ├── layout/
+│   ├── component/
+│   ├── project/
+│   ├── utility/
+│   └── style.scss
+│
+├── index.html
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
 ---
 
-### これは配置？
+## 💻 開発環境
 
-YES → layout
+- Node.js（LTS推奨）
+- npm
+- VS Code
+- Git / GitHub
+
+### Sassの監視
+
+```bash
+npm run sass
+```
+
+SCSSを編集すると、`assets/css`へ自動コンパイルされます。
+
+### ローカル開発
+
+```bash
+npm run dev
+```
+
+Sassのコンパイルとローカルサーバーを同時に起動します。
 
 ---
 
-### このclass名は後で見て意味が分かる？
+## 📚 今回学んだこと
 
-分からないなら修正する。
+- 複数セクションを持つWebサイトのHTML設計
+- FLOCSSを使ったSCSSのファイル分割
+- BEMを意識したclass設計
+- Flexbox / Gridを使ったレイアウト
+- レスポンシブ対応
+- JavaScriptによるUI操作
+- Swiperの導入とカスタマイズ
+- スクロール・パララックス表現
+- Git / GitHubを使った制作管理
 
 ---
 
-# 今後追加予定
+## 🔍 今後の改善
 
-- ハンバーガーメニュー
-- utility拡張
-- animation
-- componentライブラリ化
-- Swiperテンプレート化
-- npmライブラリ管理
-- Vite導入
-- React学習
+- コードの共通化・整理
+- アニメーションの再現度向上
+- アクセシビリティの改善
+- HTMLのセマンティックな構造の見直し
+- CSS / SCSSの保守性向上
+- ページ表示速度の改善
+
+---
+
+## ⚠️ 注意
+
+本サイトは学習目的で制作した模写作品です。
+
+掲載されているデザイン・画像・文章等の著作権は各権利者に帰属します。
+商用利用を目的としたものではありません。
